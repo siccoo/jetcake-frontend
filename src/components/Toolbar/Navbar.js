@@ -8,7 +8,7 @@ const navbar = props => (
             <div className="navbar_logo">
                 <a href="/">Jet Cake Frontend </a>
             </div>
-            <div className="navbar_navitem">
+            <div className="navbar_nav-items">
                 <ul>
                     <li><a href="/">Sign Up</a></li>
                     <li><a href="/">Login</a></li>
