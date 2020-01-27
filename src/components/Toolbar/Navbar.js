@@ -1,10 +1,14 @@
 import React from 'react';
+import '../Toolbar/SideDrawer/DrawerToggleButton';
 import './Navbar.css';
+import drawerToggleButton from '../Toolbar/SideDrawer/DrawerToggleButton';
 
 const navbar = props => (
     <header className="navbar">
         <nav className="navbar_nav">
-            <div></div>
+            <div>
+                <drawerToggleButton />
+            </div>
             <div className="navbar_logo">
                 <a href="/">JetCake Frontend </a>
             </div>
