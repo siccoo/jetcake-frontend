@@ -6,7 +6,7 @@ const navbar = props => (
         <nav className="navbar_nav">
             <div></div>
             <div className="navbar_logo">
-                <a href="/">Jet Cake Frontend </a>
+                <a href="/">JetCake Frontend </a>
             </div>
             <div className="navbar_nav-items">
                 <ul>
