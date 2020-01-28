@@ -7,7 +7,7 @@ function App() {
     <div style={{height: '100%'}}>
       <Navbar />
       <SideDrawer />
-    </div>
+    </div> 
   );
 };
 
