@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <SideDrawer />
       <Backdrop />
-      <Switch>
+      {/* <Switch>
           <Route exact={true} path='/home' component={Home} />
           <Route path='/' component={} />
           <Route path='/' component={} />
@@ -21,7 +21,7 @@ function App() {
           <Footer />
           
           
-        </Switch>
+        </Switch> */}
     </div> 
   );
 };

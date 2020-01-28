@@ -11,7 +11,25 @@
 }
 
 .side-drawer ul {
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.side-drawer li {
+    margin: 0.5rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.side-drawer a {
+    color: #181818;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:focus {
+    color: #FED136;
 }
