@@ -3,7 +3,8 @@ import '../Toolbar/SideDrawer/DrawerToggleButton';
 import './Navbar.css';
 import DrawerToggleButton from '../Toolbar/SideDrawer/DrawerToggleButton';
 
-const navbar = props => (
+const navbar = props => {
+return (
     <header className="navbar">
         <nav className="navbar_nav">
             <div>
@@ -21,6 +22,7 @@ const navbar = props => (
             </div>
         </nav>
     </header>
-);
+    );
+}
 
 export default navbar;
