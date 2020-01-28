@@ -6,11 +6,29 @@ import Backdrop from './components/Backdrop/Backdrop';
 import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
 
 function App() {
+  state = {
+    sideDrawerOpen: false
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    });
+  };
+
+  let sideDrawer;
+  let backDrop;
+
+  if(this.state.sideDrawerOpen) {
+    sideDrawer = <SideDrawer />;
+    backDrop = <Backdrop />
+  }
+
   return (
     <div style={{height: '100%'}}>
       <Navbar />
-      <SideDrawer />
-      <Backdrop />
+      
+     
       {/* <Switch>
           <Route exact={true} path='/home' component={Home} />
           <Route path='/' component={} />
