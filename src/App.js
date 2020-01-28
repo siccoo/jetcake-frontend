@@ -1,12 +1,14 @@
 import React from 'react';
-import Navbar from './components/Toolbar/Navbar'
+import Navbar from './components/Toolbar/Navbar';
+import SideDrawer  from './components/Toolbar/SideDrawer/SideDrawer';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{height: '100%'}}>
       <Navbar />
+      <SideDrawer />
     </div>
   );
-}
+};
 
 export default App;
