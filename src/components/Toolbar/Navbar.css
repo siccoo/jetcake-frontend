@@ -65,7 +65,14 @@
     color: #FED136;
 }
 
+@media (max-width: 768px) {
+    .navbar_nav-items {
+        display: none;
+    }
+}
+
 img {
     width: 100%;
+    height: 300%
 }
 
