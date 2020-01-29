@@ -5,32 +5,32 @@ import Backdrop from './components/Backdrop/Backdrop';
 
 // import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
 
-function App() {
-  // state = {
-  //   sideDrawerOpen: false
-  // };
+class App extends React.Component {
+  state = {
+    sideDrawerOpen: false
+  };
 
-  // drawerToggleClickHandler = () => {
-  //   this.setState((prevState) => {
-  //     return {sideDrawerOpen: !prevState.sideDrawerOpen}
-  //   });
-  // };
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+    });
+  };
 
-  //   let sideDrawer;
-  //   let backDrop;
+  render() {
+    let sideDrawer;
+    let backDrop;
 
-  // if(this.state.sideDrawerOpen) {
-  //   sideDrawer = <SideDrawer />;
-  //   backDrop = <Backdrop />
-  // }
+  if(this.state.sideDrawerOpen) {
+    sideDrawer = <SideDrawer />;
+    backDrop = <Backdrop />
+  }
 
   return (
     <div style={{height: '100%'}}>
       <Navbar />
-      <SideDrawer />
-      <Backdrop />
-     {/* {sideDrawer}
-     {backDrop} */}
+      
+     {sideDrawer}
+     {backDrop}
       {/* <Switch>
           <Route exact={true} path='/home' component={Home} />
           <Route path='/' component={} />
@@ -44,6 +44,7 @@ function App() {
         </Switch> */}
     </div> 
   );
+}
 };
 
 export default App;
