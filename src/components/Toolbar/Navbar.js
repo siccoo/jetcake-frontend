@@ -24,7 +24,9 @@ return (
                 </ul> 
             </div>
         </nav>
-        <div className='Main'><img src={require('./images/hero.png')} /></div>
+        <div className='Main'>
+            <img src={require('./images/hero.png')} />
+        </div>
     </header>
     );
 }

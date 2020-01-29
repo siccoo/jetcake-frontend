@@ -76,6 +76,7 @@
 .Main img {
     width: 100%;
     height: 70vh;
+    position: relative;
     /* background: url(./images/hero.png); */
 }
 
