@@ -21,6 +21,7 @@ return (
                 </ul> 
             </div>
         </nav>
+        <img src="./images/hero.png" />
     </header>
     );
 }

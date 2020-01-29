@@ -16,20 +16,21 @@ class App extends React.Component {
     });
   };
 
-  render() {
-    let sideDrawer;
+  backDropClickHandler = () => {
+    this.setState({sideDrawerOpen: false})
+  }
+
+  render() {  
     let backDrop;
 
   if(this.state.sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
-    backDrop = <Backdrop />
+    backDrop = <Backdrop click={this.backDropClickHandler}/>
   }
 
   return (
     <div style={{height: '100%'}}>
       <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-      
-     {sideDrawer}
+      <SideDrawer show={this.state.sideDrawerOpen}/>
      {backDrop}
       {/* <Switch>
           <Route exact={true} path='/home' component={Home} />
