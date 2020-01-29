@@ -35,6 +35,7 @@ class App extends React.Component {
     <div style={{height: '100%'}}>
       <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
       <SideDrawer show={this.state.sideDrawerOpen}/>
+      <SignUp />
      {backDrop}
       <Switch>
           <Route exact={true} path='/home' component={Home} />

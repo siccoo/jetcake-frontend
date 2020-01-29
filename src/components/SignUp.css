@@ -1,0 +1,43 @@
+form{
+    /* background-image: url('../images/health.jpg'); */
+    text-align: left;
+    margin-left: 60px;
+    /* padding: 7px; */
+  }
+  
+  form input[type='text']{
+    padding: 10px;
+    width: 92%;
+    /* background-color: aliceblue; */
+  }
+  
+  form input[type='email']{
+    padding: 10px;
+    width: 92%;
+    /* background-color: aliceblue; */
+  }
+  
+  form input[type='password']{
+    padding: 10px;
+    width: 92%;
+    /* background-color: aliceblue; */
+  }
+  
+  form input[type='numbers']{
+    padding: 10px;
+    width: 92%;
+    /* background-color: aliceblue; */
+  }
+  
+  select[name="PatientStatusInput"]{
+    width: 93%;
+    padding: 10px;
+  }
+  
+  button[type='Submit']{
+    padding: 5px;
+    width: 10%;
+    background-color: #008080;
+    color: #fff;
+    border-radius: 3px;
+  }

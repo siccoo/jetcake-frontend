@@ -13,12 +13,12 @@ return (
                 <DrawerToggleButton click={props.drawerClickHandler} /> 
             </div>
             <div className="navbar_logo">
-                <a href="/home">JetCake Frontend </a>
+                <a href="/">JetCake Frontend </a>
             </div>
             <div className="spacer"></div>
             <div className="navbar_nav-items">
                 <ul>
-                    <Link to="/Home" className>Home</Link>
+                    <Link to="/home" className>Home</Link>
                     <Link to="/signup">Sign Up</Link>
                     <Link to="/login">Login</Link>
                 </ul> 
