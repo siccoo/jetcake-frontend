@@ -3,6 +3,10 @@ import Navbar from './components/Toolbar/Navbar';
 import SideDrawer  from './components/Toolbar/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
+import Home from './components/Home';
+import SignUp from './components/SignUp';
+import Login from './components/Login'
+
 import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
@@ -32,17 +36,13 @@ class App extends React.Component {
       <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
       <SideDrawer show={this.state.sideDrawerOpen}/>
      {backDrop}
-      {/* <Switch>
+      <Switch>
           <Route exact={true} path='/home' component={Home} />
-          <Route path='/' component={} />
-          <Route path='/' component={} />
-          <Route path='/' component={} />
-
-          
-          <Footer />
-          
-          
-        </Switch> */}
+          <Route path='/signup' component={SignUp} />
+          <Route path='/login' component={Login} />
+          {/* <Route path='/' component={} /> */}
+          {/* <Footer /> */}
+        </Switch>
     </div> 
   );
 }

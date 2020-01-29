@@ -2,10 +2,12 @@ import React from 'react';
 import '../Toolbar/SideDrawer/DrawerToggleButton';
 import './Navbar.css';
 import DrawerToggleButton from '../Toolbar/SideDrawer/DrawerToggleButton';
+import { Link } from 'react-router-dom';
 
 const navbar = props => {
 return (
     <header className="navbar">
+        
         <nav className="navbar_nav">
             <div>
                 <DrawerToggleButton click={props.drawerClickHandler} /> 
@@ -16,12 +18,13 @@ return (
             <div className="spacer"></div>
             <div className="navbar_nav-items">
                 <ul>
-                    <li><a href="/">Sign Up</a></li>
-                    <li><a href="/">Login</a></li>
+                    <Link to="/Home">Home</Link>
+                    <Link to="/signup">Sign Up</Link>
+                    <Link to="/login">Login</Link>
                 </ul> 
             </div>
         </nav>
-        <img src="./images/hero.png" />
+        <div className='Main'><img src={require('./images/hero.png')} /></div>
     </header>
     );
 }
