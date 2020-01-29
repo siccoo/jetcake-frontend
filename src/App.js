@@ -3,7 +3,7 @@ import Navbar from './components/Toolbar/Navbar';
 import SideDrawer  from './components/Toolbar/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
 
-// import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
+import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -27,7 +27,7 @@ class App extends React.Component {
 
   return (
     <div style={{height: '100%'}}>
-      <Navbar />
+      <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
       
      {sideDrawer}
      {backDrop}

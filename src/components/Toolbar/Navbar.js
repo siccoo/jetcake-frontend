@@ -8,7 +8,7 @@ return (
     <header className="navbar">
         <nav className="navbar_nav">
             <div>
-                <DrawerToggleButton />
+                <DrawerToggleButton click={props.drawerClickHandler} /> 
             </div>
             <div className="navbar_logo">
                 <a href="/">JetCake Frontend </a>
