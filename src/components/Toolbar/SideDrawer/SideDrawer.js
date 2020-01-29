@@ -1,7 +1,7 @@
 import React from 'react';
 import './SideDrawer.css';
 
-const SideDrawer = props => {
+const sideDrawer = props => {
     return (
         <nav className="side-drawer">
         <ul>
@@ -12,4 +12,4 @@ const SideDrawer = props => {
     );  
 };
 
-export default SideDrawer;
+export default sideDrawer;
