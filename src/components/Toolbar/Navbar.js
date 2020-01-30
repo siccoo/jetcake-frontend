@@ -7,7 +7,15 @@ import { Link } from 'react-router-dom';
 const navbar = props => {
 return (
     <header className="navbar">
-        
+        {/* <div className='Main'>
+                <img src={require('./images/hero.png')} />
+                <div className='hero'>
+            
+                <h2> Welcome to Jetcake Home Page</h2>
+                <p>The goal for this project is to create a fully functional website in React with the site structure and features as you can see. </p>
+            </div>
+        </div>
+        <div>   */}
         <nav className="navbar_nav">
             <div>
                 <DrawerToggleButton click={props.drawerClickHandler} /> 
@@ -24,9 +32,7 @@ return (
                 </ul> 
             </div>
         </nav>
-        <div className='Main'>
-            <img src={require('./images/hero.png')} />
-        </div>
+        {/* </div> */}
     </header>
     );
 }

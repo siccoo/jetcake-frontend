@@ -5,7 +5,7 @@ import Backdrop from './components/Backdrop/Backdrop';
 
 import Home from './components/Home';
 import SignUp from './components/SignUp';
-import Login from './components/Login'
+import Login from './components/Login';
 
 import { Switch, BrowserRouter, Route, Link, NavLink, Redirect } from 'react-router-dom';
 
